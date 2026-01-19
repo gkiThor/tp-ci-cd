@@ -27,3 +27,7 @@ jobs:
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Docker build
+        run: docker build -t tp-cicd:ci .
+
